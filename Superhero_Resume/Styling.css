@@ -1,0 +1,122 @@
+nav{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 37%, rgba(252,176,69,1) 72%);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+header{
+    color:white;
+    font-size: large;
+    text-shadow: rgb(232, 131, 53) 1px 3px;
+}
+.nav-title{
+    margin-left: 40px;
+}
+.social-links{
+    margin-right: 40px;
+    padding: 17px 5px 2px 5px;
+    margin-top: 6px;
+}
+.social-links i{
+    margin:8px;
+    font-size: 28px;
+    color:white;
+}
+.social-media-links :hover{
+    color: blue;
+    cursor: pointer;
+}
+.profile_image h2{
+    margin-top: 50px;
+}
+.profile_image img{
+    width: 300px;
+    padding-left: 24px;
+    padding-top: 20px;
+}
+.profile_image iframe{
+    width:350px;
+    height:300px;
+}
+#main{
+    display: grid;
+    grid-template-columns: 400px 1080px;
+    gap:30px;
+    padding:20px;
+}
+#main img{
+    border:1px solid pink;
+}
+#main div{ 
+    padding: 25px 30px 0px 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#main > .information > p{
+    font-size: large;
+}
+#main .profile_image{
+    background-color:rgb(251, 205, 144);
+}
+hr{
+    height: 2px;
+    color: gray;
+    background-color: gray;
+}
+#main h2,h3{
+    color:brown;
+    font-family: 'Roboto';
+    background-color: rgba(234, 255, 0, 0.407);
+}
+#main p,ul{
+    font-family: 'Roboto';
+}
+.slides {
+    display: flex;
+    box-shadow: none;
+    overflow:auto;
+} 
+.slide {
+    min-width: 65%;
+    padding: 0;
+    border:4px solid;
+}
+.slide img {
+    width: 100%;
+    height: 240px;
+    display:inline-block;
+    padding: 0;
+}
+@keyframes slide-animation {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    75% {
+        transform: translateX(-100%);
+    }
+}
+
+@media  screen and (min-width:450px) and (max-width:767px) {
+    #main{
+        display: flex;
+        flex-direction: column;
+    }
+    #main .profile_image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media  screen and (min-width:768px) and (max-width:1024px) {
+    #main{
+        display: flex;
+    }
+}
+
+
